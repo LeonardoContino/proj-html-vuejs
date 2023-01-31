@@ -6,7 +6,7 @@ export default{
             title: 'FINE DINING EXPERIENCE',
             text: 'Pellente vitae viverra risus, sagitts, Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis'  ,
             navList: ['Home', 'Culinary History',' Our Team', 'Our Menu', 'Takeout', 'Bulletin', 'Reservation',  ],
-            
+            img: "/images/logo-restaurant.png"
             
         }
     } 
@@ -18,7 +18,7 @@ export default{
  <header>
     <div class="d-flex">
         <div class="left-header">
-            <a href="#"><img src="../../assets/images/logo-restaurant.png" alt="logo"></a>
+            <a href="#"> <img :src="img" alt="logo"/> </a>
 
             <div class="d-flex flex-column h-100 justify-content-center text-white header-text">
                 
@@ -92,7 +92,7 @@ header{
         border: 1px solid black;
         min-height: 700px;
         position: relative;
-        background-image: url('../../assets/images/headerthumb.jpg');
+        background-image: url('/images/headerthumb.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         padding: 40px;
