@@ -18,6 +18,7 @@ export default{
         <div class="right-header">
             <nav>
                 <a v-for="list in navList" href="#">{{ list }}</a>
+                <a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
             </nav>
         </div>
     </div>
@@ -54,11 +55,14 @@ header{
         padding: 40px;
         display: flex;
         justify-content: space-around;
-
-        nav a{
+        nav{
+            
+            a{
             padding: 10px;
             text-decoration: none;
             color:#B9B9B8;
+
+            }
         }
 
 
