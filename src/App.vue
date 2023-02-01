@@ -3,10 +3,12 @@ import navBarHeader from './components/header/navBarHeader.vue';
 import universalExp from './components/main/universalExp.vue';
 import thumbPlate from './components/main/thumbPLate.vue';
 import aboutUs from './components/main/aboutUs.vue';
-import bigPlate from './components/main/bigPlate.vue'
+import bigPlate from './components/main/bigPlate.vue';
+import newsProm from './components/main/newsProm.vue';
+import takeOut from './components/main/takeOut.vue';
 
 export default{
-  components: {navBarHeader, universalExp, thumbPlate, aboutUs, bigPlate}
+  components: {navBarHeader, universalExp, thumbPlate, aboutUs, bigPlate, newsProm, takeOut}
 }
 </script>
 
@@ -16,8 +18,25 @@ export default{
 <thumbPlate></thumbPlate>
 <aboutUs></aboutUs>
 <bigPlate></bigPlate>
+<newsProm></newsProm>
+<takeOut></takeOut>
 </template>
 
 <style scoped>
+
+a{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #B9B9B8;
+    width: 200px;
+     }
+     
+     .s-border{
+        border-bottom: 1px solid #B9B9B8;
+        width: 50px;
+    }
 
 </style>

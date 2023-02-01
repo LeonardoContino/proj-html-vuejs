@@ -15,7 +15,7 @@ export default{
     
     
         <div class="col d-flex flex-column align-items-center">
-            <img class="img-card" :src="imgCard" alt=""/>
+            <img class="img-card img-fluid" :src="imgCard" alt=""/>
             <h4>{{ titleCard }}</h4>
             <div class="s-border"></div>
             <p class="text-center">{{ textCard }}</p>
@@ -29,9 +29,7 @@ export default{
 <style scoped lang="scss">
 
     
-    .img-card{
-        width: 100px;
-    }
+    
     a{
         padding: 5px 10px;
         text-align: center;
@@ -50,9 +48,6 @@ export default{
         font-size: 12px;
         padding: 20px;
     }
-    .s-border{
-        border-bottom: 1px solid #B9B9B8;
-        width: 50px;
-    }
+    
 
 </style>

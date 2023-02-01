@@ -55,6 +55,9 @@ export default{
         width: 200px;
 
      }
+     h4{
+        font-size: 10px;
+     }
     }
     .bg > *{
         padding: 20px 0;

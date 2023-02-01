@@ -39,7 +39,7 @@ export default{
         
     }
 }
-.image::after{
+.image::before{
         background: linear-gradient(to top,rgb(0, 0, 0) 5%, transparent);
         position: absolute;
             top: 0;

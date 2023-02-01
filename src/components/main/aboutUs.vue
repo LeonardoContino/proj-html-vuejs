@@ -120,7 +120,7 @@ export default{
             width: 480px;
 
         }
-        .img-cards::after{
+        .img-cards::before{
             position: absolute;
             top: 0;
             left: 0;

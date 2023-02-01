@@ -3,7 +3,7 @@ import cards from './cards.vue';
 import buttom from './buttom.vue';
 
 export default{
-    components: {cards},
+    components: {cards, buttom},
     data(){
         return{
             subtitle: 'HAC TELLUS, FELIS RISUS AT mattis mattis. eget euismod semper eget tortor, donec amet, blandit. tristique facilisi faucibus elementum feugiat in nam in ffeugiat. ipsum idio etiam duis facilisis amet vulputate',
@@ -56,7 +56,9 @@ export default{
     :titleCard="sushi.titleCard"
     :textCard="sushi.textCard"
     :btn="sushi.btn"
-    ></cards>
+
+    >
+</cards>
 </div>
 </template>
 
@@ -93,6 +95,25 @@ export default{
 .sushi-card{
     margin: 0;
     margin-top: 100px;
+
+    .img-card{
+        width: 100px;
+    }
+
+    .s-border{
+        border-bottom: 1px solid #B9B9B8;
+        width: 50px;
+    }
+    a{
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 15px;
+            text-decoration: none;
+            color:#B9B9B8;
+            border: 1px solid #B9B9B8;
+            width: 200px;
+
+            }
 }
 
 </style>
