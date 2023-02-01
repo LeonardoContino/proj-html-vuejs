@@ -1,5 +1,6 @@
 <script>
 import cards from './cards.vue';
+import buttom from './buttom.vue';
 
 export default{
     components: {cards},
