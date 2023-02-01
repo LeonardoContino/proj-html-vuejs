@@ -1,8 +1,8 @@
 <script>
-import aboutUs from './aboutUs.vue';
+import cards from './cards.vue';
 
 export default{
-    components: {aboutUs},
+    components: {cards},
     data(){
         return{
             subtitle: 'HAC TELLUS, FELIS RISUS AT mattis mattis. eget euismod semper eget tortor, donec amet, blandit. tristique facilisi faucibus elementum feugiat in nam in ffeugiat. ipsum idio etiam duis facilisis amet vulputate',
@@ -50,12 +50,12 @@ export default{
     </div>
 
     <div class="row row-cols-3 justify-content-center p-4 sushi-card">
-    <aboutUs v-for="sushi in sushiCard" :key="sushi.titleCard"
+    <cards v-for="sushi in sushiCard" :key="sushi.titleCard"
     :imgCard="sushi.imgCard"
     :titleCard="sushi.titleCard"
     :textCard="sushi.textCard"
     :btn="sushi.btn"
-    ></aboutUs>
+    ></cards>
 </div>
 </template>
 
