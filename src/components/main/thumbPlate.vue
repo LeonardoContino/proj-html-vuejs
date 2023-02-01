@@ -17,7 +17,13 @@ export default{
 
 
 <template>
-<thumbProps></thumbProps>
+<thumbProps
+:subtitle="this.subTitle"
+:imgThumb="this.ImgUrl"
+:title="this.title"
+:text="this.text"
+:btn="this.btn"
+></thumbProps>
 </template>
 
 

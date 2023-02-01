@@ -1,7 +1,7 @@
 <script>
 import navBarHeader from './components/header/navBarHeader.vue';
 import universalExp from './components/main/universalExp.vue';
-import thumbPlate from '.components/main/thumbPLate.vue'
+import thumbPlate from './components/main/thumbPLate.vue'
 
 export default{
   components: {navBarHeader, universalExp, thumbPlate}
@@ -11,7 +11,7 @@ export default{
 <template>
 <navBarHeader></navBarHeader>
 <universalExp></universalExp>
-<thumbPLate></thumbPLate>
+<thumbPlate></thumbPlate>
 
 </template>
 
