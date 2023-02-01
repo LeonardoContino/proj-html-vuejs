@@ -1,13 +1,35 @@
 <script>
-
+import aboutUs from './aboutUs.vue';
 
 export default{
+    components: {aboutUs},
     data(){
         return{
             subtitle: 'HAC TELLUS, FELIS RISUS AT mattis mattis. eget euismod semper eget tortor, donec amet, blandit. tristique facilisi faucibus elementum feugiat in nam in ffeugiat. ipsum idio etiam duis facilisis amet vulputate',
             title: 'FOOD IS OUR COMMON GROUP, A UNIVERSAL EXPERIENCE',
             text: 'tristique tempus condimentum fdiam donec. condimentum uliamcoper sit elementum henfrerit mi nulla in conquat, ut. Metus, nullam scelerique netus viverra dui.',
-            img: '/images/info22x.jpg'
+            img: '/images/info22x.jpg',
+
+            sushiCard:[
+                {
+                    imgCard: '/images/sushi-1.png',
+                    titleCard: 'THE BEST TABLE IN TOWN',
+                    textCard: 'sed aenean egestas ut aliquam turpis mauris, molestie. vitae tellus tempor sem id tempus neque, tellus turpis turpis. morbi tordor id gravida aliquet',
+                    btn: 'EXPLORE THE MENU'
+                },
+                {
+                    imgCard: '/images/sushi-2.png',
+                    titleCard: 'PERFECT FOR GROUPS',
+                    textCard: 'sed aenean egestas ut aliquam turpis mauris, molestie. vitae tellus tempor sem id tempus neque, tellus turpis turpis. morbi tordor id gravida aliquet',
+                    btn: 'MAKE A RESERVATION'
+                },
+                {
+                    imgCard: '/images/sushi-3.png',
+                    titleCard: 'FRESH PRODUCE EVERYDAY',
+                    textCard: 'sed aenean egestas ut aliquam turpis mauris, molestie. vitae tellus tempor sem id tempus neque, tellus turpis turpis. morbi tordor id gravida aliquet',
+                    btn: 'LEARN MORE ABOUT US'
+                }
+            ]
         }
     }
 }
@@ -26,6 +48,15 @@ export default{
             <img class="p-4 img-exp img-fluid" :src="img" alt="">
         </div>
     </div>
+
+    <div class="row row-cols-3 justify-content-center p-4 sushi-card">
+    <aboutUs v-for="sushi in sushiCard" :key="sushi.titleCard"
+    :imgCard="sushi.imgCard"
+    :titleCard="sushi.titleCard"
+    :textCard="sushi.textCard"
+    :btn="sushi.btn"
+    ></aboutUs>
+</div>
 </template>
 
 
@@ -58,4 +89,9 @@ export default{
     
 
 }
+.sushi-card{
+    margin: 0;
+    margin-top: 100px;
+}
+
 </style>
