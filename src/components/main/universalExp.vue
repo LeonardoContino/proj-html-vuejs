@@ -46,7 +46,7 @@ export default{
 
         </div>
         <div class="col">
-            <img class="p-4 img-exp img-fluid" :src="img" alt="">
+            <img class="m-4 img-exp img-fluid" :src="img" alt="">
         </div>
     </div>
 
@@ -91,6 +91,9 @@ export default{
     height: 600px;
     
 
+}
+.img-exp:hover{
+    box-shadow: 0px 0px 15px -2px #000000
 }
 .sushi-card{
     margin: 0;
