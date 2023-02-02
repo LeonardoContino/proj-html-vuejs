@@ -139,6 +139,8 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@use '../../assets/sass/variables.scss' as *;
+
 .menu{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -159,11 +161,11 @@ export default{
 .card-menu > *{
     height: 100%;
     padding: 50px;
-    background-color:#E8E8E8 ;
+    background-color: $secondary ;
 
 }
 .card-menu > *:hover{
-    color: white;
+    color: $primary;
     position: relative;
     bottom: 50px;
     background-image: url('/images/misc22x.jpg');
@@ -172,9 +174,7 @@ export default{
 }
 
 
-.card-menu > *::after{
-    color: white;
-}
+
 
 
 </style>

@@ -30,21 +30,14 @@ export default{
 
 
 <style scoped lang="scss">
+@use '../../assets/sass/variables.scss' as *;
 
 .s-border{
-        border-bottom: 1px solid #B9B9B8;
+        border-bottom: 1px solid white;
         width: 50px;
         margin: 30px 0;
     }
-    a{
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    border: 1px solid #B9B9B8;
-    width: 200px;
-     }
+    
 
 .thumb{
     height: 700px;

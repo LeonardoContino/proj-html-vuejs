@@ -78,6 +78,8 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@use '../../assets/sass/variables.scss' as *;
+
 
 .section{
     width: 1000px;
@@ -90,10 +92,10 @@ export default{
     }
     .card-primary{
         height: 600px;
-        border: 1px solid black;
+        border: 1px solid $black;
         margin-bottom: 50px;
         .description{
-            background-color: #030303;
+            background-color: $black;
             color: white;
             padding: 80px;
 
@@ -102,14 +104,14 @@ export default{
             }
 
             .s-border{
-                border-bottom: 1px solid #B9B9B8;
+                border-bottom: 1px solid $primary;
                 width: 50px;
             }
         }
         .description:hover{
             cursor: pointer;
             transform: scale(1.05);
-            box-shadow: 5px 5px 5px gray;
+            box-shadow: 0px 0px 15px -2px $black;
         }
         
     }
@@ -153,8 +155,6 @@ export default{
         
        }
     }
-    a{
-            color:#ffffff;
-        }
+    
 }
 </style>

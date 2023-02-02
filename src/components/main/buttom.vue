@@ -12,19 +12,21 @@ export default{
 </template>
 
     
-<style scoped>
+<style scoped lang="scss">
+@use '../../assets/sass/variables.scss' as *;
+
 a{
             padding: 5px 10px;
             text-align: center;
             font-size: 15px;
             text-decoration: none;
-            color:  #bda16b;
-            border: 1px solid #bda16b;
+            color:  $primary;
+            border: 1px solid $primary;
             width: 200px;
 
             }
     a:hover{
-                color:#000000;
-                background-color: #bda16b;
+                color:$black;
+                background-color: $primary;
             }
 </style>

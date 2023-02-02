@@ -30,19 +30,6 @@ export default{
 
 <style scoped>
 
-a{
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    border: 1px solid #B9B9B8;
-    width: 200px;
-     }
-     
-     .s-border{
-        border-bottom: 1px solid #B9B9B8;
-        width: 50px;
-    }
+
 
 </style>

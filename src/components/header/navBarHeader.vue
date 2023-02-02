@@ -44,14 +44,15 @@ export default{
 
 
 <style scoped lang="scss">
+@use '../../assets/sass/variables' as *;
 header{
     min-height: 700px;
     
     .left-header{
         flex-basis: 40%;
-        border: 1px solid black;
+        border: 1px solid $black;
         min-height: 700px;
-        background-color: #000000;
+        background-color: $black;
         padding: 40px;
         padding-left: 50px;
         img{
@@ -73,16 +74,7 @@ header{
                 padding: 30px 0px;
                 padding-right: 50px;
             }
-            a{
-            padding: 5px 10px;
-            text-align: center;
-            font-size: 15px;
-            text-decoration: none;
-            color:#B9B9B8;
-            border: 1px solid #B9B9B8;
-            width: 200px;
-
-            }
+            
             
 
            
@@ -108,7 +100,7 @@ header{
             a{
             padding: 10px;
             text-decoration: none;
-            color:#B9B9B8;
+            color: $secondary;
 
             }
         }

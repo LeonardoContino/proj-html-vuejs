@@ -64,6 +64,8 @@ export default{
 
 
 <style scoped lang="scss">
+@use '../../assets/sass/variables.scss' as *;
+
 .main-exp{
     height: 600px;
     padding: 50px 80px;
@@ -93,7 +95,7 @@ export default{
 
 }
 .img-exp:hover{
-    box-shadow: 0px 0px 15px -2px #000000
+    box-shadow: 0px 0px 15px -2px $black;
 }
 .sushi-card{
     margin: 0;
@@ -107,16 +109,7 @@ export default{
         border-bottom: 1px solid #B9B9B8;
         width: 50px;
     }
-    a{
-            padding: 5px 10px;
-            text-align: center;
-            font-size: 15px;
-            text-decoration: none;
-            color:#B9B9B8;
-            border: 1px solid #B9B9B8;
-            width: 200px;
-
-            }
+    
 }
 
 </style>
