@@ -1,12 +1,15 @@
 <script>
+import buttom from '../main/buttom.vue';
 export default{
+    components:{buttom},
     data(){
         return{   
             subtitle: 'THE BEST TABLE IN TOWN',
             title: 'FINE DINING EXPERIENCE',
             text: 'Pellente vitae viverra risus, sagitts, Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis'  ,
             navList: ['Home', 'Culinary History',' Our Team', 'Our Menu', 'Takeout', 'Bulletin', 'Reservation',  ],
-            img: "/images/logo-restaurant.png"
+            img: "/images/logo-restaurant.png",
+            btn: 'EXPLORE THE MENU'
             
         }
     } 
@@ -25,7 +28,7 @@ export default{
                 <h4>{{ subtitle }}</h4>
                 <h1>{{ title}}</h1>
                 <p>{{ text }}</p>
-                <a href="#">EXPLORE THE MENU</a>
+                <buttom :btn="btn"></buttom>
 
             </div>
         </div>
@@ -57,7 +60,7 @@ header{
         .header-text{
             padding-left: 50px;
             h4{
-                color: #B9B9B8;
+                
                 padding-bottom: 30px;
                 font-size: 12px;
             }
@@ -66,7 +69,7 @@ header{
                 padding: 30px 0px;
             }
             p{
-                color: #B9B9B8;
+                
                 padding: 30px 0px;
                 padding-right: 50px;
             }
@@ -80,6 +83,8 @@ header{
             width: 200px;
 
             }
+            
+
            
         }
     

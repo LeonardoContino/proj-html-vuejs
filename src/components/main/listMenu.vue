@@ -170,16 +170,8 @@ export default{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card-menu > *::before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.567) 5%, transparent);
-    height: 100%;
-    width: 100%;
-    content: '';
-            
-}
+
+
 .card-menu > *::after{
     color: white;
 }

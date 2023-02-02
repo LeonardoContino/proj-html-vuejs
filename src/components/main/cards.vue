@@ -1,5 +1,7 @@
 <script>
+import buttom from './buttom.vue';
 export default{
+    components:{buttom},
     props:{
         imgCard : String,
         titleCard: String,
@@ -19,7 +21,7 @@ export default{
             <h4>{{ titleCard }}</h4>
             <div class="s-border"></div>
             <p class="text-center">{{ textCard }}</p>
-            <a href="#">{{ btn }}</a>
+            <buttom :btn="btn"></buttom>
 
         </div>
    
@@ -30,16 +32,7 @@ export default{
 
     
     
-    a{
-        padding: 5px 10px;
-        text-align: center;
-        font-size: 15px;
-        text-decoration: none;
-        color: black;
-        border: 1px solid #B9B9B8;
-        width: 200px;
-
-     }
+    
     h4{
         font-size: 20px;
         padding: 10px;

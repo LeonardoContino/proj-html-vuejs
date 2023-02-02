@@ -1,7 +1,9 @@
 <script>
-import cards from './cards.vue';
+
+import buttom from './buttom.vue';
 
 export default{
+    components:{buttom},
     data(){
         return{
             promCards:[
@@ -23,7 +25,7 @@ export default{
             ]
         }
     },
-    components:{cards}
+    
 }
 </script>
 

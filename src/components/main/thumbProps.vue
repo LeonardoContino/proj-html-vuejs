@@ -1,5 +1,7 @@
 <script>
+import buttom from './buttom.vue';
 export default{
+    components:{buttom},
     props:{
         imgThumb : String,
         title: String,
@@ -19,7 +21,7 @@ export default{
             <h4>{{ subtitle }}</h4>
             <h2>{{ title }}</h2>
             <p>{{ text }}</p>
-            <a href="#">{{ btn }}</a>
+            <buttom :btn="btn"></buttom>
         </div>
 
     </div>
@@ -39,22 +41,15 @@ export default{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
         padding: 80px;
         color: #B9B9B8;
+        a{
+            padding: 10px;
+        }
         h2{
             color: white;
         }
-        a{
-        padding: 5px 10px;
-        text-align: center;
-        font-size: 15px;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #B9B9B8;
-        width: 200px;
-
-     }
+        
      h4{
         font-size: 10px;
      }
