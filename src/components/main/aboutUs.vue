@@ -106,6 +106,11 @@ export default{
                 width: 50px;
             }
         }
+        .description:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 5px 5px 5px gray;
+        }
         
     }
 
