@@ -48,7 +48,7 @@ export default{
 
 .thumb{
     height: 700px;
-    margin: 100px 0;
+    margin-top: 100px;
     position: relative;
     color: white;
 
