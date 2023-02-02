@@ -7,9 +7,10 @@ import bigPlate from './components/main/bigPlate.vue';
 import newsProm from './components/main/newsProm.vue';
 import takeOut from './components/main/takeOut.vue';
 import listMenu from './components/main/listMenu.vue';
+import braised from './components/main/braised.vue';
 
 export default{
-  components: {navBarHeader, universalExp, thumbPlate, aboutUs, bigPlate, newsProm, takeOut, listMenu}
+  components: {navBarHeader, universalExp, thumbPlate, aboutUs, bigPlate, newsProm, takeOut, listMenu, braised}
 }
 </script>
 
@@ -22,6 +23,7 @@ export default{
 <newsProm></newsProm>
 <takeOut></takeOut>
 <listMenu></listMenu>
+<braised></braised>
 </template>
 
 <style scoped>
