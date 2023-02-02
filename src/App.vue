@@ -6,9 +6,10 @@ import aboutUs from './components/main/aboutUs.vue';
 import bigPlate from './components/main/bigPlate.vue';
 import newsProm from './components/main/newsProm.vue';
 import takeOut from './components/main/takeOut.vue';
+import listMenu from './components/main/listMenu.vue';
 
 export default{
-  components: {navBarHeader, universalExp, thumbPlate, aboutUs, bigPlate, newsProm, takeOut}
+  components: {navBarHeader, universalExp, thumbPlate, aboutUs, bigPlate, newsProm, takeOut, listMenu}
 }
 </script>
 
@@ -20,6 +21,7 @@ export default{
 <bigPlate></bigPlate>
 <newsProm></newsProm>
 <takeOut></takeOut>
+<listMenu></listMenu>
 </template>
 
 <style scoped>
